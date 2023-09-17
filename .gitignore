@@ -1,0 +1,117 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# VS Code directories
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Rider IDE directories
+.idea/
+
+# User-specific files (Rider)
+*.sln.iml
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history
+
+# Rider IDE directories
+.idea/
+
+# User-specific files (Rider)
+*.sln.iml
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows binaries
+*.exe
+*.exe.config
+*.dll
+*.pdb
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# .NET Core build output
+bin/
+obj/
+
+# .NET Core tools
+.project
+
+# Rider IDE directories
+.idea/
+
+# User-specific files (Rider)
+*.sln.iml
+
+# NUnit
+TestResults/
+
+# Azure DevOps pipeline artifacts
+[Aa]rtifacts/
+# Tye application publishing output
+.tye/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Custom rules
+# Place any custom rules here
+
+# Microsoft Azure Build Output
+csx/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.history/
+
+
+# JetBrains Rider
+.idea/
+*.sln.iml
