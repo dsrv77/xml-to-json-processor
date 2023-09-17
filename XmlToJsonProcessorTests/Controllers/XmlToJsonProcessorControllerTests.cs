@@ -6,7 +6,6 @@ using Microsoft.Extensions.Options;
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
 using Shouldly;
-using System.Net.Http.Json;
 using XmlToJsonProcessor.Controllers;
 using XmlToJsonProcessor.Services;
 using XmlToJsonProcessor.Settings;
@@ -93,7 +92,7 @@ namespace XmlToJsonProcessorTests.Controllers
             await _xmlProcessorService.Received().ProcessXmlToJson(file, "filename.xml");
             await _xmlProcessorService.Received().SaveJsonToFile(jsonContent, "filename.xml", Arg.Any<string>());
 
-            result.ShouldBeOfType<OkResult>();
+            result.ShouldBeOfType<OkObjectResult>();
         }
     }
 }

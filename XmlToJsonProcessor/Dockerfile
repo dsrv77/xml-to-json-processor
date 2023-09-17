@@ -18,6 +18,7 @@ RUN dotnet build "XmlToJsonProcessor.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "XmlToJsonProcessor.csproj" -c Release -o /app/publish /p:UseAppHost=false
+COPY ["appsettings.json", "appsettings.Development.json", "/app/publish/"]
 
 FROM base AS final
 WORKDIR /app

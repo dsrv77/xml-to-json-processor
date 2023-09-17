@@ -24,15 +24,12 @@ namespace XmlToJsonProcessorTests.Services
         [Test]
         public async Task Should_Convert_Xml_To_Json()
         {
-            // Arrange
             var xmlContent = "<root><child>text</child></root>";
             var stream = new MemoryStream(Encoding.UTF8.GetBytes(xmlContent));
             var formFile = new FormFile(stream, 0, stream.Length, "Data", "dummy.xml");
 
-            // Act
             var jsonResult = await _service.ProcessXmlToJson(formFile, "dummy.xml");
 
-            // Assert
             jsonResult.ShouldNotBeEmpty();
             var jsonEquivalent = JsonConvert.SerializeObject(new { root = new { child = "text" } });
             jsonResult.ShouldBe(jsonEquivalent);

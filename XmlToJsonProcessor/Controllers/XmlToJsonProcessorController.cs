@@ -50,14 +50,13 @@ namespace XmlToJsonProcessor.Controllers
                 string jsonContent = await _xmlProcessorService.ProcessXmlToJson(file, filename);
 
                 await _xmlProcessorService.SaveJsonToFile(jsonContent, filename, _targetDirectory);
+                return Ok(jsonContent);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message, $"Error processing XML to JSON for {file.FileName}");
                 return BadRequest(ex.Message);
             }
-
-            return Ok();
         }
     }
 }
