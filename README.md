@@ -4,8 +4,6 @@
 
 # Running the API with Docker:
 
-
-
  - go into XmlToJsonProcessor folder
  - execute docker build -t xml-to-json .
  - execute docker run -p 8080:80 xml-to-json
@@ -40,6 +38,8 @@ The endpoint expects:
 # Testing & Concurrency
 
 In XmlToJsonProcessor/test-files there are several files which I have used to test the API.
+
+The application saves the resulting json files in a directory specified in appsettings. Currently set to relative path output.
 
 There also can be found a bash script concurrent-requests.sh which fires multiple requests at the same time.
 
